@@ -22,6 +22,3 @@ Este proyecto simula una tienda de computación especializada en productos gamer
 - **Google Fonts**: fuente "Funnel Sans".
 - **Recursos multimedia**: video MP4, imágenes PNG y JPG.
 - **(Opcional futuro)**: Integración con JavaScript para funcionalidad dinámica y backend con Flask.
-
-## 📁 Estructura del proyecto
-
