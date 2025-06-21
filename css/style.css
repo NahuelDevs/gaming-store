@@ -1,0 +1,471 @@
+:root {
+    --blanco: white;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+
+@font-face {
+    font-family: 'Plateia';
+    src: url('../fonts/Plateia-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Logo */
+.logo {
+    font-size: 15px;
+    color: white;
+    font-family: 'Plateia';
+}
+
+/* Navegacion */
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    padding: 10px 30px;
+    background-color: black;
+}
+
+/* Texto Navegacion */
+.texto-navegacion {
+    display: flex;
+    gap: 20px;
+    font-family: "Funnel Sans", sans-serif;
+    align-items: center;
+}
+
+.texto-navegacion a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    gap: 5px;
+}
+
+.texto-navegacion a:hover {
+    color: #0ff;
+}
+
+.ingresar-registrarme {
+    font-family: "Funnel" sans-serif;
+}
+
+.imagen-user {
+    height: 30px;
+}
+
+.imagen-carrito {
+    height: 30px;
+}
+
+/* Contenedor padre del video y texto */
+.banner>div {
+    position: relative;
+    height: 60vh;
+    /* ✔️ Ajustado para evitar espacio gris */
+    overflow: hidden;
+}
+
+/* Video */
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* ✔️ Ocupa todo el contenedor */
+    object-fit: cover;
+    box-shadow: 0px -4px 29px -4px rgba(0, 0, 0, 0.75);
+    z-index: 0;
+}
+
+/* Texto centrado */
+.texto-banner {
+    font-family: 'Plateia', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    /* ✔️ Corregido el centrado */
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    z-index: 2;
+    margin: 0;
+    text-align: center;
+    text-shadow: 0 0 5px #fff,
+        0 0 10px #0ff,
+        0 0 20px #0ff,
+        0 0 40px #0ff,
+        0 0 80px #0ff;
+    animation: flicker 2s infinite;
+}
+
+/* Animación Texto */
+@keyframes flicker {
+
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 5px #fff,
+            0 0 10px #0ff,
+            0 0 20px #0ff,
+            0 0 40px #0ff,
+            0 0 80px #0ff;
+    }
+
+    20%,
+    24%,
+    55% {
+        opacity: 0.3;
+        text-shadow: none;
+    }
+}
+
+.texto-banner-p {
+    display: flex;
+    font-family: 'Plateia', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    font-size: 1.2rem;
+    /* ✔️ Arreglado: antes era 1 sin unidad */
+    z-index: 2;
+    margin: 0;
+    text-align: center;
+    color: var(--blanco);
+    top: 60%;
+    /* ✔️ Centrado proporcionalmente debajo del h3 */
+    left: 50%;
+    transform: translate(-50%, -150%);
+    opacity: 60%;
+}
+
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1c1c1d;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+    z-index: 1;
+}
+
+
+
+/* Categorias Botones medianos */
+
+.botones-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 50px;
+}
+
+.botones-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 50px;
+}
+
+/* Tarjetas rectangulares */
+.boton,
+.boton-2,
+.boton-3,
+.boton-4 {
+    position: relative;
+    width: 280px;
+    height: 180px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover de tarjeta */
+.boton:hover,
+.boton-2:hover,
+.boton-3:hover,
+.boton-4:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 255, 255, 0.5);
+}
+
+/* Enlace dentro de cada tarjeta */
+.boton a,
+.boton-2 a,
+.boton-3 a,
+.boton-4 a {
+    display: block;
+    height: 100%;
+    position: relative;
+}
+
+/* Imagen */
+.boton img,
+.boton-2 img,
+.boton-3 img,
+.boton-4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Texto encima */
+.texto-superior {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Funnel Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 8px 0;
+    z-index: 2;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Hover del texto (ej: cambio de color o más brillo) */
+.boton a:hover .texto-superior,
+.boton-2 a:hover .texto-superior,
+.boton-3 a:hover .texto-superior,
+.boton-4 a:hover .texto-superior {
+    background: rgba(0, 255, 255, 0.8);
+    color: black;
+}
+
+
+/* Banners Slider */
+
+.container {
+    position: relative;
+    padding-top: 50px;
+}
+
+.container .wrapper {
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.wrapper {
+    max-width: 100%;
+}
+
+.container .wrapper-holder>div {
+    flex: 0 0 25%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container .wrapper-holder {
+    display: grid;
+    grid-template-columns: repeat(4, 100%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    animation: slider 30s ease-in-out infinite alternate;
+}
+
+.container #slider-img-1 {
+    background-image: url(../img/BannerTarjetasGraficas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container #slider-img-2 {
+    background-image: url(../img/GIGABYTE-RTX-9060XT-BANNER-DESKTOP-1-scaled.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container #slider-img-3 {
+    background-image: url(../img/product_RX7600.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container #slider-img-4 {
+    background-image: url(../img/BannerTarjetasGraficas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container .button-holder .button {
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: .3rem;
+}
+
+.container .button-holder {
+    position: absolute;
+    left: 45%;
+    bottom: 0%;
+}
+
+.button:hover {
+    box-shadow: 0px 0px 7px 4px rgba(0, 255, 255, 0.6);
+}
+
+@keyframes slider {
+    0% {
+        transform: translateX(0%);
+    }
+
+    20% {
+        transform: translateX(0%);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    45% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    70% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-300%);
+    }
+
+    95% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+/* Catalogo */
+
+
+
+
+main {
+    padding-top: 50px;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.producto {
+    background-color: #1b1b1f;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 200, 255, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    font-family: "Funnel Sans", sans-serif;
+}
+
+.producto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 15px var(--color-primario);
+}
+
+.producto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.info-producto {
+    padding: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-producto h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+    color: #00ffb3;
+}
+
+.info-producto p {
+    flex-grow: 1;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: #ccc;
+}
+
+.precio {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #00ffb3;
+}
+
+.btn-comprar {
+    background-color: var(--blanco);
+    border: none;
+    color: black;
+    font-weight: 700;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.btn-comprar:hover {
+    background-color: #0ff;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+}
+
+@media (max-width: 480px) {
+    .producto img {
+        height: 150px;
+    }
+}
