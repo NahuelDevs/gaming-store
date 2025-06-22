@@ -2,11 +2,11 @@
     --blanco: white;
 }
 
+
 body {
     background-color: black;
     overflow-x: hidden;
 }
-
 
 @font-face {
     font-family: 'Plateia';
@@ -58,18 +58,17 @@ body {
 }
 
 .imagen-user {
-    height: 30px;
+    height: 25px;
 }
 
 .imagen-carrito {
-    height: 30px;
+    height: 25px;
 }
 
 /* Contenedor padre del video y texto */
 .banner>div {
     position: relative;
     height: 60vh;
-    /* ✔️ Ajustado para evitar espacio gris */
     overflow: hidden;
 }
 
@@ -80,7 +79,6 @@ video {
     left: 0;
     width: 100%;
     height: 100%;
-    /* ✔️ Ocupa todo el contenedor */
     object-fit: cover;
     box-shadow: 0px -4px 29px -4px rgba(0, 0, 0, 0.75);
     z-index: 0;
@@ -94,7 +92,6 @@ video {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -80%);
-    /* ✔️ Corregido el centrado */
     color: rgb(255, 255, 255);
     font-size: 3rem;
     z-index: 2;
@@ -141,13 +138,11 @@ video {
     font-weight: bold;
     position: absolute;
     font-size: 1.2rem;
-    /* ✔️ Arreglado: antes era 1 sin unidad */
     z-index: 2;
     margin: 0;
     text-align: center;
     color: var(--blanco);
     top: 60%;
-    /* ✔️ Centrado proporcionalmente debajo del h3 */
     left: 50%;
     transform: translate(-50%, -150%);
     opacity: 60%;
@@ -165,10 +160,7 @@ video {
     z-index: 1;
 }
 
-
-
 /* Categorias Botones medianos */
-
 .botones-categorias {
     display: flex;
     flex-wrap: wrap;
@@ -177,15 +169,6 @@ video {
     padding: 50px;
 }
 
-.botones-categorias {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    padding: 50px;
-}
-
-/* Tarjetas rectangulares */
 .boton,
 .boton-2,
 .boton-3,
@@ -199,7 +182,6 @@ video {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover de tarjeta */
 .boton:hover,
 .boton-2:hover,
 .boton-3:hover,
@@ -208,7 +190,6 @@ video {
     box-shadow: 0 6px 15px rgba(0, 255, 255, 0.5);
 }
 
-/* Enlace dentro de cada tarjeta */
 .boton a,
 .boton-2 a,
 .boton-3 a,
@@ -218,7 +199,6 @@ video {
     position: relative;
 }
 
-/* Imagen */
 .boton img,
 .boton-2 img,
 .boton-3 img,
@@ -229,7 +209,6 @@ video {
     display: block;
 }
 
-/* Texto encima */
 .texto-superior {
     position: absolute;
     top: 10px;
@@ -246,7 +225,6 @@ video {
     transition: background 0.3s, color 0.3s;
 }
 
-/* Hover del texto (ej: cambio de color o más brillo) */
 .boton a:hover .texto-superior,
 .boton-2 a:hover .texto-superior,
 .boton-3 a:hover .texto-superior,
@@ -255,12 +233,11 @@ video {
     color: black;
 }
 
-
-/* Banners Slider */
-
+/* Banners Slider básico */
 .container {
     position: relative;
     padding-top: 50px;
+    overflow: hidden;
 }
 
 .container .wrapper {
@@ -269,49 +246,34 @@ video {
     overflow: hidden;
 }
 
-.wrapper {
-    max-width: 100%;
+
+.wrapper-holder {
+    display: flex;
+    width: 100%;
+    /* 4 imágenes */
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
 }
 
-.container .wrapper-holder>div {
-    flex: 0 0 25%;
+.wrapper-holder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.wrapper-holder>div {
+    flex: 0 0 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.container .wrapper-holder {
-    display: grid;
-    grid-template-columns: repeat(4, 100%);
-    height: 100%;
-    width: 100%;
+.container .button-holder {
     position: absolute;
-    animation: slider 30s ease-in-out infinite alternate;
-}
-
-.container #slider-img-1 {
-    background-image: url(../img/BannerTarjetasGraficas.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.container #slider-img-2 {
-    background-image: url(../img/GIGABYTE-RTX-9060XT-BANNER-DESKTOP-1-scaled.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.container #slider-img-3 {
-    background-image: url(../img/product_RX7600.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.container #slider-img-4 {
-    background-image: url(../img/BannerTarjetasGraficas.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
+    left: 45%;
+    bottom: 0%;
 }
 
 .container .button-holder .button {
@@ -321,70 +283,22 @@ video {
     border-radius: 15px;
     display: inline-block;
     margin: .3rem;
-}
-
-.container .button-holder {
-    position: absolute;
-    left: 45%;
-    bottom: 0%;
+    cursor: pointer;
 }
 
 .button:hover {
     box-shadow: 0px 0px 7px 4px rgba(0, 255, 255, 0.6);
 }
 
-@keyframes slider {
-    0% {
-        transform: translateX(0%);
-    }
-
-    20% {
-        transform: translateX(0%);
-    }
-
-    25% {
-        transform: translateX(-100%);
-    }
-
-    45% {
-        transform: translateX(-100%);
-    }
-
-    50% {
-        transform: translateX(-200%);
-    }
-
-    70% {
-        transform: translateX(-200%);
-    }
-
-    75% {
-        transform: translateX(-300%);
-    }
-
-    95% {
-        transform: translateX(-300%);
-    }
-
-    100% {
-        transform: translateX(0%);
-    }
-}
-
-
 /* Catalogo */
-
 .texto-destacado {
     font-family: 'Plateia', sans-serif;
     color: #0ff;
     font-size: 20px;
     text-shadow: 0 0 1px #fff,
-        0 0 10px #0ff,
-        0 0 10px #0ff,
-        0 0 90px #0ff,
-        0 0 100px #0ff;
+        0 4px 10px rgba(0, 255, 255, 0.63);
+    padding-bottom: 10px;
 }
-
 
 main {
     padding-top: 110px;
@@ -411,7 +325,7 @@ main {
 
 .producto:hover {
     transform: translateY(-10px);
-    box-shadow: 0 1px 35px rgba(0, 255, 255, 0.5);
+    box-shadow: 0 1px 14px rgba(0, 255, 255, 0.5);
 }
 
 .producto img {
@@ -477,4 +391,9 @@ footer {
     .producto img {
         height: 150px;
     }
+}
+
+.button-holder .button.activo {
+    background-color: #0ff;
+    box-shadow: 0px 0px 7px 4px rgba(0, 255, 255, 0.8);
 }

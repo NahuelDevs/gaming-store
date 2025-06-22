@@ -15,6 +15,7 @@
 </head>
 
 <body>
+
     <header class="banner">
         <nav class="navegacion">
             <div class="logo">
@@ -23,11 +24,11 @@
             <div class="texto-navegacion">
                 <a class="ingresar-registrarme" href="index.html">
                     <img class="imagen-user" src="img/user (1).png" alt="Imagen Usuario">
-                    Ingresar / Registrarme
+                    Iniciar Sesion
                 </a>
                 <a href="index.html">
                     <img class="imagen-carrito" src="img/carrito-de-compras.png" alt="Imagen Carrito">
-                    Carrito
+                    US$ 0.00
                 </a>
             </div>
         </nav>
@@ -51,21 +52,18 @@
                     <img src="img/amd-4952189_1920.jpg" alt="Botón Procesador" class="boton-Procesador" />
                 </a>
             </div>
-
             <div class="boton-2">
                 <a href="index.html">
                     <div class="texto-superior">Tarjetas Graficas</div>
                     <img src="img/tarjetas graficas.jpg" alt="Botón Tarjeta Gráfica" class="boton-img" />
                 </a>
             </div>
-
             <div class="boton-3">
                 <a href="index.html">
                     <div class="texto-superior">Memorias RAM</div>
                     <img src="img/memoria-ram.jpg" alt="Botón Rams" class="boton-Rams" />
                 </a>
             </div>
-
             <div class="boton-4">
                 <a href="index.html">
                     <div class="texto-superior">Motherboards</div>
@@ -78,28 +76,27 @@
 
     <section class="container">
         <div class="wrapper">
-            <div class="wrapper-holder">
-                <div id="slider-img-1"></div>
-                <div id="slider-img-2"></div>
-                <div id="slider-img-3"></div>
-                <div id="slider-img-4"></div>
+            <div class="wrapper-holder" id="slider">
+                <img src="img/BannerTarjetasGraficas.jpg" alt="Banner 1">
+                <img src="img/GIGABYTE-RTX-9060XT-BANNER-DESKTOP-1-scaled.jpg" alt="Banner 2">
+                <img src="img/product_RX7600.jpg" alt="Banner 3">
+                <img src="img/GIGABYTE-RTX-9060XT-BANNER-DESKTOP-1-scaled (1).jpg" alt="Banner 4">
             </div>
         </div>
 
         <div class="button-holder">
-            <a href="#slider-img-1" class="button"></a>
-            <a href="#slider-img-2" class="button"></a>
-            <a href="#slider-img-3" class="button"></a>
-            <a href="#slider-img-4" class="button"></a>
+            <span class="button" onclick="moverSlider(0)"></span>
+            <span class="button" onclick="moverSlider(1)"></span>
+            <span class="button" onclick="moverSlider(2)"></span>
+            <span class="button" onclick="moverSlider(3)"></span>
         </div>
     </section>
 
     <main>
         <div class="texto-destacado">
-            <h3> Destacados</h3>
+            <h3>Destacados</h3>
         </div>
         <div class="grid-productos">
-            
             <article class="producto">
                 <img src="img/pcgamer.png" alt="PC Gamer Titan" />
                 <div class="info-producto">
@@ -111,8 +108,7 @@
             </article>
 
             <article class="producto">
-                <img src="img/pcgamer2.png"
-                    alt="PC Gamer Aurora" />
+                <img src="img/pcgamer2.png" alt="PC Gamer Aurora" />
                 <div class="info-producto">
                     <h2>PC Gamer Aurora</h2>
                     <p>AMD Ryzen 7 5800X, RTX 3060 Ti, 32GB RAM, SSD 512GB.</p>
@@ -122,8 +118,7 @@
             </article>
 
             <article class="producto">
-                <img src="img/pcgamer3.png"
-                    alt="PC Gamer Nebula" />
+                <img src="img/pcgamer3.png" alt="PC Gamer Nebula" />
                 <div class="info-producto">
                     <h2>PC Gamer Nebula</h2>
                     <p>Intel i5 12400F, RTX 3060, 16GB RAM, SSD 512GB.</p>
@@ -133,8 +128,7 @@
             </article>
 
             <article class="producto">
-                <img src="img/pcgamer4.png"
-                    alt="PC Gamer Eclipse" />
+                <img src="img/pcgamer4.png" alt="PC Gamer Eclipse" />
                 <div class="info-producto">
                     <h2>PC Gamer Eclipse</h2>
                     <p>AMD Ryzen 5 5600X, RTX 3050, 16GB RAM, SSD 256GB.</p>
@@ -142,9 +136,12 @@
                     <button class="btn-comprar">Comprar</button>
                 </div>
             </article>
-
         </div>
     </main>
+
+    <footer></footer>
+
+    <script src="scripts/slider.js"></script>
 </body>
 
 </html>
