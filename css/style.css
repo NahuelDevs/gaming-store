@@ -419,3 +419,41 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Boton Arma tu PC */
+
+.boton-5 a {
+    display: block;
+    height: 100%;
+    position: relative;
+}
+
+.boton-arma-tu-pc img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.boton-5 {
+    position: relative;
+    width: 534px; 
+    height: 200px; 
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.boton-5 a:hover .texto-superior {
+    background: rgba(0, 255, 255, 0.8);
+    color: black;
+}
+
+.botones-armatupc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 50px;
+}
