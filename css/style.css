@@ -428,7 +428,7 @@ footer {
     position: relative;
 }
 
-.boton-arma-tu-pc img {
+.boton-arma-tu-pc {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -437,7 +437,7 @@ footer {
 
 .boton-5 {
     position: relative;
-    width: 534px; 
+    width: 575px; 
     height: 200px; 
     border-radius: 15px;
     overflow: hidden;
@@ -453,7 +453,119 @@ footer {
 .botones-armatupc {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    padding: 50px;
+    gap: 0.2rem;
+    justify-content: space-between;
+    padding-top: 20px;
 }
+
+.texto-mediano {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Funnel Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 8px 0;
+    z-index: 2;
+    transition: background 0.3s, color 0.3s;
+}
+
+.boton-5 a:hover .texto-mediano {
+    background: rgba(0, 255, 255, 0.8);
+    color: black;
+}
+
+/* Texto Servicios */
+
+.texto-servicios {
+    display: flex;
+    justify-content: center;
+    font-family: 'Plateia', sans-serif;
+    color: #0ff;
+    font-size: 20px;
+    text-shadow: 0 0 1px #fff,
+        0 4px 10px rgba(0, 255, 255, 0.63);
+    padding-top: 10px;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    padding: 2rem 23.1rem;
+    gap: 10rem;
+    background-color:#4b4b4b;
+}
+
+.footer-texto {
+    font-family: "Funnel Sans", sans-serif;
+    text-decoration: none;
+}
+
+.footer-texto a {
+    font-family: "Funnel Sans", sans-serif;
+    text-decoration: none;
+    color: white;
+    transition: background 0.3s, color 0.3s;
+}
+
+.footer-texto a:hover {
+    font-family: "Funnel Sans", sans-serif;
+    text-decoration: none;
+    color: #0ff;
+}
+
+.footer-texto h3 {
+    font-family: "Funnel Sans", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Texto Impuesto */
+
+.footer-impuestos {
+    font-family: "Funnel Sans", sans-serif;
+    text-decoration: none;
+}
+
+.footer-impuestos p {
+    font-family: "Funnel Sans", sans-serif;
+    text-decoration: none;
+    color: white;
+    transition: background 0.3s, color 0.3s;
+}
+
+.footer-impuestos h3 {
+    font-family: "Funnel Sans", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+/* texto Imagenes */
+
+.footer-texto-imagenes {
+    font-family: "Funnel Sans", sans-serif;
+    text-decoration: none;
+}
+
+.footer-texto-imagenes p {
+    font-family: "Funnel Sans", sans-serif;
+    text-decoration: none;
+    color: white;
+    transition: background 0.3s, color 0.3s;
+}
+
+
+.footer-texto-imagenes h3 {
+    font-family: "Funnel Sans", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+

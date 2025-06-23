@@ -6,7 +6,7 @@ const observador = new IntersectionObserver((entradas) => {
         }
     });
 }, {
-    threshold: 0.2 // Cuando el 20% del elemento se ve
+    threshold: 0.2 
 });
 
 // Seleccionar los elementos que queremos animar
