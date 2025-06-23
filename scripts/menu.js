@@ -13,3 +13,19 @@ document.addEventListener('click', (e) => {
         menu.classList.remove('activo');
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const boton = document.getElementById('boton-categorias');
+    const lista = document.getElementById('lista-categorias');
+
+    boton.addEventListener('click', () => {
+        lista.classList.toggle('visible');
+    });
+
+    // Opcional: cerrar el menú si haces clic fuera
+    window.addEventListener('click', function (e) {
+        if (!boton.contains(e.target) && !lista.contains(e.target)) {
+            lista.classList.remove('visible');
+        }
+    });
+});
