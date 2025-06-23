@@ -1,24 +1,84 @@
-# Gaming Store 💻🔥
+# 🎮 Gaming Store - Tienda Web Gamer
 
-Sitio web moderno y visualmente atractivo de una tienda online dedicada a la venta de productos para PC Gamer.
+¡Bienvenido a **Gaming Store**,** un proyecto de tienda online enfocada en el mundo del hardware y gaming!  
+Este sitio fue diseñado con un enfoque visual moderno, animaciones, sliders y una experiencia pensada para entusiastas de PC y videojuegos.
 
-## 🎮 Descripción
+---
 
-Este proyecto simula una tienda de computación especializada en productos gamers. Tiene un diseño enfocado en la experiencia del usuario, con banners en video, categorías interactivas y un catálogo de productos con opción de compra.
+## 🖼️ Vista previa
 
-### Características principales:
-- Video de fondo en el banner principal.
-- Tipografía personalizada usando Google Fonts.
-- Navegación clara con íconos de usuario y carrito.
-- Sección de categorías (procesadores, gráficas, RAM, motherboards).
-- Slider de imágenes.
-- Catálogo de PCs gamer con imagen, descripción, precio y botón de compra.
+![Vista previa del sitio](./static/img/preview.jpg) <!-- Cambia esto por tu captura real -->
 
-## 🧱 Tecnologías utilizadas
+---
 
-- **HTML5**: estructura del sitio.
-- **CSS3**: estilos personalizados.
-- **Normalize.css**: para estandarizar estilos entre navegadores.
-- **Google Fonts**: fuente "Funnel Sans".
-- **Recursos multimedia**: video MP4, imágenes PNG y JPG.
-- **(Opcional futuro)**: Integración con JavaScript para funcionalidad dinámica y backend con Flask.
+## 🚀 Funcionalidades
+
+✅ Catálogo visual de productos  
+✅ Animaciones CSS personalizadas  
+✅ Video de fondo de procesadores y placas gráficas  
+✅ Menú responsive (modo hamburguesa)  
+✅ Slider de productos destacados  
+🚧 Carrito funcional en desarrollo (con Flask + base de datos)
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+| Frontend     | Backend (futuro) |
+|--------------|------------------|
+| HTML5        | Flask (Python)   |
+| CSS3         | SQLite           |
+| JavaScript   | Session / Cookies (carrito) |
+
+---
+
+## 📁 Estructura del proyecto
+gaming-store/
+├── static/
+│ ├── css/
+│ ├── js/
+│ └── img/
+├── templates/
+│ └── index.html
+├── app.py (próximamente)
+└── README.md
+
+---
+
+## 🎯 Objetivo del proyecto
+
+Este proyecto nació como práctica de desarrollo web, con la meta de:
+- Aplicar conocimientos de HTML, CSS y JavaScript
+- Incorporar lógica backend con Flask
+- Construir una experiencia visual atractiva y moderna
+- Simular una tienda real con catálogo y carrito funcional
+
+---
+
+## 🔮 Próximas mejoras
+
+- [ ] Sistema de carrito completo con Flask y sesiones
+- [ ] Registro e inicio de sesión de usuarios
+- [ ] Integración con base de datos (SQLite → PostgreSQL)
+- [ ] Sistema de pagos (MercadoPago o Stripe)
+- [ ] Hosting en producción (Render / Vercel / Railway)
+
+---
+
+## 📌 Repositorio
+
+🔗 [github.com/NahuelDevs/gaming-store](https://github.com/NahuelDevs/gaming-store)
+
+---
+
+## 📲 Contacto / LinkedIn
+
+¿Te gustó el proyecto o querés darme feedback?
+
+Conectá conmigo en 👉 [linkedin.com/in/nahuelabreu](https://www.linkedin.com/in/nahuelabreu) *(o tu link real)*
+
+---
+
+## ⭐ Apoyá el proyecto
+
+Si este proyecto te inspiró o ayudó a aprender, ¡dejá una estrella en el repo! ⭐
