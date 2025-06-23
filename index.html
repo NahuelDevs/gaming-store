@@ -18,8 +18,49 @@
 
     <header class="banner">
         <nav class="navegacion">
+            <button class="boton-desplegable" id="toggle-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+
+            <!-- Menú desplegable -->
+            <nav class="menu-desplegable" id="menu">
+                <ul>
+                    <a href="procesadores.html">
+                    <li>Procesadores</li>
+                    </a>
+
+                    <a href="">
+                    <li>Tarjetas Gráficas</li>
+                    </a>
+
+                    <a href="">
+                    <li>Memorias RAM</li>
+                    </a>
+
+                    <a href="">
+                    <li>Almacenamiento</li>
+                    </a>
+
+                    <a href="">
+                    <li>Fuentes de Poder</li>
+                    </a>
+                    
+                </ul>
+            </nav>
+
+            <nav class="menu-desplegable" id="menu">
+                <ul>
+                    <li>Procesadores</li>
+                    <li>Tarjetas Gráficas</li>
+                    <li>Memorias RAM</li>
+                    <li>Almacenamiento</li>
+                    <li>Fuentes de poder</li>
+                </ul>
+            </nav>
             <div class="logo">
-                <h2>Gaming Store</h2>
+                <h2>Gaming Store.uy</h2>
             </div>
             <div class="texto-navegacion">
                 <a class="ingresar-registrarme" href="index.html">
@@ -47,7 +88,7 @@
     <section>
         <div class="botones-categorias">
             <div class="boton">
-                <a href="index.html">
+                <a href="procesadores.html">
                     <div class="texto-superior">Procesadores</div>
                     <img src="img/amd-4952189_1920.jpg" alt="Botón Procesador" class="boton-Procesador" />
                 </a>
@@ -187,22 +228,22 @@
         </div>
         <div class="botones-armatupc">
             <div class="boton-5">
-                    <a href="index.html">
-                        <div class="texto-mediano">Arma Tu PC</div>
-                        <img src="img/armatupc.jpg" alt="Botón Arma tu pc" class="boton-arma-tu-pc" />
-                    </a>
+                <a href="index.html">
+                    <div class="texto-mediano">Arma Tu PC</div>
+                    <img src="img/armatupc.jpg" alt="Botón Arma tu pc" class="boton-arma-tu-pc" />
+                </a>
             </div>
 
             <div class="boton-5">
-                    <a href="index.html">
-                        <div class="texto-mediano">Repara Tu PC</div>
-                        <img src="img/reparando.jpg" alt="Botón Arma tu pc" class="boton-arma-tu-pc" />
-                    </a>
+                <a href="index.html">
+                    <div class="texto-mediano">Repara Tu PC</div>
+                    <img src="img/reparando.jpg" alt="Botón Arma tu pc" class="boton-arma-tu-pc" />
+                </a>
             </div>
         </div>
     </main>
 
-    
+
 
     <footer class="footer aparecer">
         <div class="footer-texto">
@@ -238,6 +279,7 @@
 
     <script src="scripts/slider.js"></script>
     <script src="scripts/scroll.js"></script>
+    <script src="scripts/menu.js"></script>
 </body>
 
 </html>
