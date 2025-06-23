@@ -7,7 +7,7 @@ Este sitio fue diseñado con un enfoque visual moderno, animaciones, sliders y u
 
 ## 🖼️ Vista previa
 
-![Vista previa del sitio][(./static/img/preview.jpg)](https://nahueldevs.github.io/gaming-store/) <!-- Cambia esto por tu captura real -->
+![Vista previa del sitio](https://nahueldevs.github.io/gaming-store/) <!-- Cambia esto por tu captura real -->
 
 ---
 
