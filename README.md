@@ -75,7 +75,7 @@ Este proyecto nació como práctica de desarrollo web, con la meta de:
 
 ¿Te gustó el proyecto o querés darme feedback?
 
-Conectá conmigo en 👉 [linkedin.com/in/nahuelabreu](https://www.linkedin.com/in/nahuelabreu) *(o tu link real)*
+Conectá conmigo en 👉 [linkedin.com/in/nahuelabreu](https://www.linkedin.com/in/nahuel-abreu-86950a2ba/) *(o tu link real)*
 
 ---
 
