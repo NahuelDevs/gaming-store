@@ -60,8 +60,8 @@ function mostrarUsuario(usuario) {
     btnLogout.addEventListener("click", () => {
         localStorage.removeItem("usuario");
         usuarioNav.innerHTML = `
-            <img class="imagen-user" src="img/user (1).png" alt="Imagen Usuario">
-            Iniciar Sesión
+    <img class="imagen-user" src="img/user (1).png" alt="Imagen Usuario">
+        Iniciar Sesión
         `;
         usuarioNav.style.pointerEvents = "auto";
         usuarioNav.style.cursor = "pointer";
