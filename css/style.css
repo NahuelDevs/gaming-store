@@ -14,6 +14,7 @@ body {
     font-weight: bold;
     font-style: normal;
 }
+
 /* Tu botón de hamburguesa original */
 .boton-desplegable {
     display: flex;
@@ -28,7 +29,7 @@ body {
     align-items: center;
 }
 
-.boton-desplegable > div {
+.boton-desplegable>div {
     background: white;
     height: 2px;
     width: 100%;
@@ -81,10 +82,12 @@ body {
     padding: 0;
     margin: 0;
 }
+
 .menu-desplegable a {
     text-decoration: none;
     color: white;
 }
+
 .menu-desplegable li {
     padding: 0.5rem 0;
     font-family: sans-serif;
@@ -97,14 +100,15 @@ body {
 }
 
 /* Logo */
-.logo h2{
+.logo h2 {
     font-size: 22px;
     color: white;
     font-family: 'Plateia';
     justify-content: center;
-    
+
 }
-.logo{
+
+.logo {
     padding-left: 12em;
 }
 
@@ -150,6 +154,116 @@ body {
 .imagen-carrito {
     height: 25px;
 }
+
+
+/* Inicio sesion */
+
+/* Modal Fondo */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.modal:not(.oculto) {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Contenido del Modal */
+.modal-contenido-fachero {
+    background: #121212;
+    padding: 2.5rem 3rem;
+    border-radius: 12px;
+    width: 320px;
+    box-shadow: 0 0 15px #00ffffaa;
+    color: #eee;
+    position: relative;
+    font-family: 'Funnel Sans', sans-serif;
+    text-align: center;
+    transform: translateY(-30px);
+    transition: transform 0.3s ease;
+}
+
+.modal:not(.oculto) .modal-contenido-fachero {
+    transform: translateY(0);
+}
+
+/* Botón cerrar */
+.cerrar-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: transparent;
+    border: none;
+    font-size: 1.8rem;
+    color: #0ff;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.cerrar-btn:hover {
+    color: #00aaff;
+}
+
+/* Formulario */
+#login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 1rem;
+}
+
+#login-form label {
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #0ff;
+}
+
+#login-form input {
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #222;
+    color: #eee;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#login-form input:focus {
+    outline: none;
+    background-color: #333;
+}
+
+/* Botón ingresar */
+.btn-login-fachero {
+    padding: 0.9rem;
+    background: linear-gradient(90deg, #00e0ff, #0088cc);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-login-fachero:hover {
+    background: linear-gradient(90deg, #0088cc, #00e0ff);
+}
+
+
 
 /* Contenedor padre del video y texto */
 .banner>div {
@@ -403,7 +517,8 @@ main {
 
 .grid-productos {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas fijas */
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columnas fijas */
     gap: 2rem;
 }
 
@@ -523,8 +638,8 @@ footer {
 
 .boton-5 {
     position: relative;
-    width: 575px; 
-    height: 200px; 
+    width: 575px;
+    height: 200px;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -584,7 +699,7 @@ footer {
     display: flex;
     padding: 2rem 23.1rem;
     gap: 10rem;
-    background-color:#232323;
+    background-color: #232323;
 }
 
 .footer-texto {
@@ -654,4 +769,3 @@ footer {
     text-decoration: none;
     color: white;
 }
-

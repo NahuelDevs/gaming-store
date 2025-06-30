@@ -38,7 +38,7 @@
                 <h2>Gaming Store.uy</h2>
             </div>
             <div class="texto-navegacion">
-                <a class="ingresar-registrarme" href="#">
+                <a class="ingresar-registrarme" href="#" id="abrir-login">
                     <img class="imagen-user" src="img/user (1).png" alt="Imagen Usuario">
                     Iniciar Sesión
                 </a>
@@ -142,11 +142,21 @@
     <footer class="footer aparecer">
         <div class="footer-texto">
             <h3>EMPRESA</h3>
-            <a href="#"><p>Sobre nosotros</p></a>
-            <a href="#"><p>Envíos</p></a>
-            <a href="#"><p>Políticas de garantía</p></a>
-            <a href="#"><p>Trabaja con nosotros</p></a>
-            <a href="#"><p>Privacidad</p></a>
+            <a href="#">
+                <p>Sobre nosotros</p>
+            </a>
+            <a href="#">
+                <p>Envíos</p>
+            </a>
+            <a href="#">
+                <p>Políticas de garantía</p>
+            </a>
+            <a href="#">
+                <p>Trabaja con nosotros</p>
+            </a>
+            <a href="#">
+                <p>Privacidad</p>
+            </a>
         </div>
         <div class="footer-impuestos">
             <h3>IMPUESTOS</h3>
@@ -154,20 +164,28 @@
         </div>
         <div class="footer-texto-imagenes">
             <h3>IMÁGENES</h3>
-            <p>Las imágenes de los productos son meramente ilustrativas. Para conocer detalles específicos, contáctanos.</p>
+            <p>Las imágenes de los productos son meramente ilustrativas. Para conocer detalles específicos, contáctanos.
+            </p>
         </div>
     </footer>
 
-    <!-- Modal Login -->
+    <!-- Modal Login Mejorado -->
     <div id="login-modal" class="modal oculto">
-        <div class="modal-contenido">
-            <h3>Iniciar Sesión</h3>
-            <input type="text" id="usuario" placeholder="Usuario">
-            <input type="password" id="password" placeholder="Contraseña">
-            <button id="btn-login">Ingresar</button>
-            <button id="btn-cerrar">Cerrar</button>
+        <div class="modal-contenido-fachero">
+            <button id="btn-cerrar" class="cerrar-btn">&times;</button>
+            <h2>Iniciar Sesión</h2>
+            <form id="login-form">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu usuario" required>
+
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+
+                <button type="submit" id="btn-login" class="btn-login-fachero">Ingresar</button>
+            </form>
         </div>
     </div>
+
 
     <!-- Scripts -->
     <script src="scripts/slider.js"></script>
@@ -176,4 +194,5 @@
     <script src="scripts/login.js"></script>
 
 </body>
+
 </html>
